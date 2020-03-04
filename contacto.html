@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <!-- NAV-VAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="prueba.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="miDieta.html">Mi Dieta</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- MAIN -->
+    <main class="container-flow">  
+        <div class="row">
+
+            <!-- PARTE IZQUIERDA -->
+            <div class="col-md-6">
+                <h3 class="text-center">Nuestra informacion</h3>
+                <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small></p>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 400px">
+                            <iframe src="https://maps.google.com/maps?q=Barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <address>
+                            <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <!-- PARTE DERECHA -->
+            <div class="col-md-6">
+                <h3 class="text-center"> Contactanos </h3> 
+
+                <form class="text-center border border-light p-5" action="#!">
+                    <p class="text-center">Envianos tus dudas o sugerencias a traves de este formulario</p>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- First name -->
+                            <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="apellidos" class="form-control" placeholder="Apellidos">
+                        </div>
+                    </div>
+
+                    <!-- E-mail -->
+                    <input type="email" id="email" class="form-control mb-4" placeholder="Email de contacto">
+
+                    <!-- Phone number -->
+                    <input type="number" id="telefono" class="form-control mb-4" placeholder="Telefono de contacto" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    
+                    <!-- Asunto -->
+                    <input type="text" id="asunto" class="form-control mb-4" placeholder="Asunto">
+
+                    <!-- Mensaje -->
+                    <textarea class="form-control mb-4" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
+
+                    <!-- Newsletter -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+                    </div>
+
+                    <!-- Sign up button -->
+                    <button class="btn btn-info my-4 btn-block" id="boton-guardar" onclick="guardarDatos()" class="submitButton" value="Submit">Enviar</button>
+
+                    <!-- Social register -->
+                    <p>o siguenos en:</p>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                    <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+                    
+
+                    <!-- Terms of service -->
+                    <p>By clicking
+                        <em>Enviar</em> you agree to our
+                        <a href="" target="_blank">terms of service</a>
+                    </p>
+                </form>
+            </div>
+    </main>
+<!-- Default form register -->
+            
+    <!-- FOOTER -->
+    <footer class="page-footer font-small bg-dark pt-4 fixed-bottom">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div> 
+    </footer>
+            
+    <script src="./scripts/scripts.js"></script> 
+</body>
+</html>
