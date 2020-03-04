@@ -1,0 +1,41 @@
+
+*{
+
+}
+
+body{
+
+}
+
+/* MI DIETA */
+.miDieta{
+    background-image: url(https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80);
+}
+
+.col-sm{
+    background-color: blue;
+    display: block;
+    color: wheat;
+}
+
+.col-md-4{
+    background-color: tomato;
+    display: block;
+}
+
+
+
+/* CONTACTO */
+.map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
