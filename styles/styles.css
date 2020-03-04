@@ -5,16 +5,26 @@
 }
 
 body{
-  width: 100%;
 }
 
+main{
+  width: 100vw;
+  height: 100vh;
+}
 
 .page-footer{
   padding: 0px;
 } 
+/* INICIO */
+.inicio{
+    background-image: url(https://www.elsetge.cat/myimg/f/10-103334_healthy-food-tumblr-wallpaper-2018-clean-15-dirty.jpg);
+}
+
 /* MI DIETA */
 .miDieta{
-    background-image: url(https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80);
+    background-image: url(https://wallpaperaccess.com/full/1737971.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .circulo{
@@ -33,15 +43,19 @@ body{
 }
 
 .card{
-  width: 100rem;
-  height: 12rem;
+  padding: 0 !important;
+  max-width: 15rem !important;
+  max-height: 15rem !important;
+  margin: 4px;
 }
 
 /* CONTACTO */
 
 .contacto{
     background-image: url(https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80);
-}
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
 .map-container-5{
     overflow:hidden;
