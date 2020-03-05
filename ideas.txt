@@ -1,0 +1,12 @@
+- Al hacer el drag se haga mas pequeño y redondo el producto
+- Al hacer el drop se queden los productos en orden
+- Cuando se cojan los productos de la zona de drop vuelvan a ser grandes ¿?
+- Al darle a enviar se guarde en el correo
+
+Javascript/DOM
+- Pintar datos DB en pantalla
+- Al darle al drop se pinte en el rectangulo los datos 
+- Hacer que los datos se sumen en unos totales
+
+Bootstrap
+- Arreglar posicionamiento productos al hacer responsive.

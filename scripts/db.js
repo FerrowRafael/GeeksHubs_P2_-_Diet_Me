@@ -18,4 +18,3 @@ let Comidas = [
     new Comida("Queso de Cabra", 17, 2, 18, 250),
     new Comida("Solomillo", 17, 0, 23, 272),
 ]
-

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Dieta</title>
-    <link rel="icon" href="./recursos/FotoPerfil.jpg">
+    <link rel="icon" href="https://pngimage.net/wp-content/uploads/2018/05/diet-logo-png-5.png">
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -37,60 +37,68 @@
 
       <!-- MAIN -->
 
-	<main class="row miDieta">
+	<main class="row miDieta d-flex justify-content-around">
 
         <!-- PARTE IZQUIERDA -->
 		<div class="col-md-6">
             <h3 class="text-center mt-4">Comida al plato</h3>
             <div>
                 <div class="circulo mx-auto" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ></div>
-                <div class="rectangulo mx-auto"></div>
+                <!-- <div class="rectangulo mx-auto"></div> -->
             </div>
             
         </div>
         
         <!-- PARTE DERECHA -->
-		<div class="col-md-6">
+		<div class="col-md-6 " ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
 			<h3 class="text-center mt-4"> Productos </h3>
 			<div class="row">
-				<div class="col-md-4 card proyGridProducto proyectoImg" id="panBlanco" draggable="true" ondragstart="onDragStart(event)" >
-                    <img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Bread-PNG-Clipart.png" class="image  mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+				<div class="col-md-4 proyGridProducto proyectoImg" id="panBlanco" draggable="true" ondragstart="onDragStart(event)" >
+                    
 				</div>
-				<div class="col-md-4 card proyGridProducto proyectoImg  mx-auto my-auto" id="platano" draggable="true" ondragstart="onDragStart(event)"  >
-                    <img src="https://pngimage.net/wp-content/uploads/2018/05/banana-png-image-2.png" class="image  mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+				<div class="col-md-4 proyGridProducto proyectoImg" id="platano" draggable="true" ondragstart="onDragStart(event)"  >
+                    
 				</div>
-				<div class="col-md-4 card proyGridProducto proyectoImg" id="arroz" draggable="true" ondragstart="onDragStart(event)">
-                    <img src="https://www.stickpng.com/assets/images/5bbc96d30bc67a02c98d958e.png" class="image mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+				<div class="col-md-4 proyGridProducto proyectoImg" id="arroz" draggable="true" ondragstart="onDragStart(event)">
+                    
 				</div>
-			</div>
+            </div>
+
+            <div class="row">
+				<div class="col-md-4 proyGridProducto proyectoImg" id="jamonSerrano" draggable="true" ondragstart="onDragStart(event)">
+                    
+                </div>
+                
+				<div class="col-md-4 proyGridProducto proyectoImg" id="atun" draggable="true" ondragstart="onDragStart(event)">
+                    
+                </div>
+                
+				<div class="col-md-4 proyGridProducto proyectoImg" id="lechuga" draggable="true" ondragstart="onDragStart(event)">
+                    
+				</div>
+            </div>
+            
 			<div class="row">
-				<div class="col-md-4 card proyGridProducto proyectoImg" id="jamonSerrano" draggable="true" ondragstart="onDragStart(event)">
-                    <img src="https://i.pinimg.com/originals/16/66/02/1666022e8bbbe9567b02dce0c9eec376.png" class="image mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+				<div class="col-md-4 proyGridProducto proyectoImg" id="jamonSerrano" draggable="true" ondragstart="onDragStart(event)">
+                    
 				</div>
-				<div class="col-md-4 card proyGridProducto proyectoImg" id="atun" draggable="true" ondragstart="onDragStart(event)">
-                    <img src="https://www.espinaler.com/wp-content/uploads/atun.png" class="image mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+				<div class="col-md-4 proyGridProducto proyectoImg" id="atun" draggable="true" ondragstart="onDragStart(event)">
+                    
 				</div>
-				<div class="col-md-4 card proyGridProducto proyectoImg" id="lechuga" draggable="true" ondragstart="onDragStart(event)">
-                    <img src="https://purepng.com/public/uploads/medium/purepng.com-green-lettucevegetablessalad-lettuce-spinach-leaves-leafs-green-lettuce-941524683044kdfoz.png" class="image mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+				<div class="col-md-4 proyGridProducto proyectoImg" id="lechuga" draggable="true" ondragstart="onDragStart(event)">
+                    
 				</div>
-			</div>
+            </div>
+            
 			<div class="row">
-				<div class="col-md-4 card proyGridProducto proyectoImg" id="manzana" draggable="true" ondragstart="onDragStart(event)">
-                    <img src="https://www.freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png" class="image mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="..." style="width: 12rem;">         
+				<div class="col-md-4 proyGridProducto proyectoImg" id="manzana" draggable="true" ondragstart="onDragStart(event)">
+                    
 				</div>
-				<div class="col-md-4 card proyGridProducto proyectoImg" id="quesoCabra" draggable="true" ondragstart="onDragStart(event)" >
-                    <img src="https://purepng.com/public/uploads/medium/purepng.com-cheesefood-cheese-milk-9415246337902cdnc.png" draggable="true" ondragstart="onDragStart(event)" class="image mx-auto my-auto" alt="...">         
+				<div class="col-md-4 proyGridProducto proyectoImg" id="quesoCabra" draggable="true" ondragstart="onDragStart(event)" >
+                    
 				</div>
-				<div class="col-md-4 card proyGridProducto proyectoImg" id="solomillo" draggable="true" ondragstart="onDragStart(event)">
-                    <img src="https://casafarreloro.com/cms/wp-content/uploads/2016/05/wCARNE-solomillo.png" class="image mx-auto my-auto" draggable="true mx-auto my-auto" ondragstart="onDragStart(event)" alt="...">         
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 proyGridProducto proyectoImg" id="solomillo" draggable="true" ondragstart="onDragStart(event)">
+                    
 				</div>
 			</div>
 		</div>
@@ -100,7 +108,6 @@
     <!-- FOOTER -->
     <footer class="page-footer font-small bg-danger pt-2 fixed-bottom">
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
         </div> 
     </footer>
 

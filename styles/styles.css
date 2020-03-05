@@ -4,8 +4,8 @@
   padding: 0;
 }
 
-body{
-}
+/* body{
+} */
 
 main{
   width: 100vw;
@@ -46,11 +46,9 @@ main{
   padding: 0 !important;
   max-width: 15rem !important;
   max-height: 15rem !important;
-  margin: 4px;
 }
 
 /* CONTACTO */
-
 .contacto{
     background-image: url(https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80);
     background-repeat: no-repeat;
@@ -75,7 +73,7 @@ main{
     /* OPACITY BOX */
 .proyectoImg {
     position: relative;
-    background-color: white;
+  
     border-radius: 10px
   }
   
@@ -101,7 +99,7 @@ main{
   }
   
   .proyectoImg:hover .image {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   
   .proyectoImg:hover .middle {
@@ -131,9 +129,9 @@ main{
     float: right;
   } */
   
-  input[type=submit]:hover {
+  /* input[type=submit]:hover {
     background-color: #45a049;
-  }
+  } */
   
   .col-25 {
     float: left;
