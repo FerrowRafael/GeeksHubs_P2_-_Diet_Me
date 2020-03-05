@@ -2,6 +2,8 @@
 - Al hacer el drop se queden los productos en orden
 - Cuando se cojan los productos de la zona de drop vuelvan a ser grandes ¿?
 - Al darle a enviar se guarde en el correo
+- Hacer responsive las formas
+- Poner productos mismo tamaño
 
 Javascript/DOM
 - Pintar datos DB en pantalla
@@ -10,3 +12,4 @@ Javascript/DOM
 
 Bootstrap
 - Arreglar posicionamiento productos al hacer responsive.
+- Arreglar .row -15

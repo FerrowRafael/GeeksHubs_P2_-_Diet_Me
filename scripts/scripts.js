@@ -1,17 +1,22 @@
 /* DRAG & DROP */
+let pan = document.getElementById('1');
+const datos = document.getElementsByClassName("rectangulo");
 function onDragStart(ev){
     ev.dataTransfer.setData("text", ev.target.id);
     console.log("OnDragStart element: ", ev.target.id)
   }
   
-  function onDrop(event){
+  function onDrop(ev){
     event.preventDefault();
     console.log("OnDrop")
     
-
+    console.log(pan)
+    pan.innerHTML = Object.values(Pan);
     
     let data = event.dataTransfer.getData("text");
     event.target.appendChild(document.getElementById(data));
+
+    console.log(typeof(data));
   }
   
   function onDragOver(event){
@@ -21,7 +26,7 @@ function onDragStart(ev){
   
   function onDragLeave(event){
     console.log("OnDragLeave")
-  }
+  } 
 
 
   function handleDragStart(event) {
@@ -61,7 +66,7 @@ function guardarDatos(){
 
 // DOM PRODUCTOS
 
-document.getElementById('panBlanco').innerHTML=`<img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Bread-PNG-Clipart.png" class="image  mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+document.getElementById('1').innerHTML=`<img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Bread-PNG-Clipart.png" class="image  mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
 <div class="row image card-body" >
     <ul class="column middle">
         <h3 class="card-title">Pan Blanco</h3>
@@ -72,7 +77,7 @@ document.getElementById('panBlanco').innerHTML=`<img src="https://pngriver.com/w
     </ul>
 </div>`
 
-document.getElementById('platano').innerHTML=`<img src="https://pngimage.net/wp-content/uploads/2018/05/banana-png-image-2.png" class="image  mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+document.getElementById('2').innerHTML=`<img src="https://pngimage.net/wp-content/uploads/2018/05/banana-png-image-2.png" class="image  mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
 <div class="row image card-body" >
     <ul class="column middle">
         <h3 class="card-title">Platano</h3>
@@ -83,7 +88,7 @@ document.getElementById('platano').innerHTML=`<img src="https://pngimage.net/wp-
     </ul>
 </div>`
 
-document.getElementById('arroz').innerHTML=`<img src="https://www.stickpng.com/assets/images/5bbc96d30bc67a02c98d958e.png" class="image mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+document.getElementById('3').innerHTML=`<img src="https://www.stickpng.com/assets/images/5bbc96d30bc67a02c98d958e.png" class="image mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
 <div class="row image card-body" >
     <ul class="column middle">
         <h3 class="card-title">Arroz</h3>
@@ -94,7 +99,7 @@ document.getElementById('arroz').innerHTML=`<img src="https://www.stickpng.com/a
     </ul>
 </div>`
 
-document.getElementById('jamonSerrano').innerHTML=`<img src="https://i.pinimg.com/originals/16/66/02/1666022e8bbbe9567b02dce0c9eec376.png" class="image img-fluid mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+document.getElementById('4').innerHTML=`<img src="https://i.pinimg.com/originals/16/66/02/1666022e8bbbe9567b02dce0c9eec376.png" class="image img-fluid mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
 <div>
     <div>
       <ul class="column middle">
@@ -107,7 +112,7 @@ document.getElementById('jamonSerrano').innerHTML=`<img src="https://i.pinimg.co
     </div>
 </div>`
 
-document.getElementById('atun').innerHTML=`<img src="https://www.espinaler.com/wp-content/uploads/atun.png" class="image img-fluid mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+document.getElementById('5').innerHTML=`<img src="https://www.espinaler.com/wp-content/uploads/atun.png" class="image img-fluid mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
 <div >
 <div>
 <ul class="column middle">
@@ -120,7 +125,7 @@ document.getElementById('atun').innerHTML=`<img src="https://www.espinaler.com/w
 </div>
 </div>`
 
-document.getElementById('lechuga').innerHTML=`<img src="https://purepng.com/public/uploads/medium/purepng.com-green-lettucevegetablessalad-lettuce-spinach-leaves-leafs-green-lettuce-941524683044kdfoz.png" class="image img-fluid mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
+document.getElementById('6').innerHTML=`<img src="https://purepng.com/public/uploads/medium/purepng.com-green-lettucevegetablessalad-lettuce-spinach-leaves-leafs-green-lettuce-941524683044kdfoz.png" class="image img-fluid mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="...">         
 <div class="card-block">
     <div class="row image card-body" >
         <ul class="column middle">
@@ -133,7 +138,7 @@ document.getElementById('lechuga').innerHTML=`<img src="https://purepng.com/publ
     </div>
 </div>`
 
-document.getElementById('manzana').innerHTML=`<img src="https://www.freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png" class="image img-fluid mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="..." style="width: 12rem;">         
+document.getElementById('7').innerHTML=`<img src="https://www.freepngimg.com/thumb/apple/8-2-apple-fruit-transparent.png" class="image img-fluid mx-auto my-auto" draggable="true" ondragstart="onDragStart(event)" alt="..." style="width: 12rem;">         
 <div class="card-block">
     <div class="row image card-body" >
         <ul class="column middle">
@@ -146,7 +151,7 @@ document.getElementById('manzana').innerHTML=`<img src="https://www.freepngimg.c
     </div>
 </div>`
 
-document.getElementById('quesoCabra').innerHTML=`<img src="https://purepng.com/public/uploads/medium/purepng.com-cheesefood-cheese-milk-9415246337902cdnc.png" draggable="true" ondragstart="onDragStart(event)" class="image img-fluid mx-auto my-auto" alt="...">         
+document.getElementById('8').innerHTML=`<img src="https://purepng.com/public/uploads/medium/purepng.com-cheesefood-cheese-milk-9415246337902cdnc.png" draggable="true" ondragstart="onDragStart(event)" class="image img-fluid mx-auto my-auto" alt="...">         
 <div class="card-block">
     <div class="row image card-body" >
         <ul class="column middle">
@@ -159,7 +164,7 @@ document.getElementById('quesoCabra').innerHTML=`<img src="https://purepng.com/p
     </div>
 </div>`
 
-document.getElementById('solomillo').innerHTML=`<img src="https://casafarreloro.com/cms/wp-content/uploads/2016/05/wCARNE-solomillo.png" class="image mx-auto my-auto" draggable="true img-fluid mx-auto my-auto" ondragstart="onDragStart(event)" alt="...">         
+document.getElementById('9').innerHTML=`<img src="https://casafarreloro.com/cms/wp-content/uploads/2016/05/wCARNE-solomillo.png" class="image mx-auto my-auto" draggable="true img-fluid mx-auto my-auto" ondragstart="onDragStart(event)" alt="...">         
 <div class="card-block">
     <div class="row image card-body" >
         <ul class="column middle">
