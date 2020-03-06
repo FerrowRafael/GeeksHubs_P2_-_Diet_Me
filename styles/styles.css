@@ -6,10 +6,8 @@
 
 /* body{
 } */
-
 main{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
 }
 
 .page-footer{
@@ -41,20 +39,19 @@ main{
   height: 15rem;
 
 }
+/* fin mi dieta */
 
-.card{
-  padding: 0 !important;
-  max-width: 15rem !important;
-  max-height: 15rem !important;
-}
 
 /* CONTACTO */
 .contacto{
     background-image: url(https://wallpaperaccess.com/full/1737971.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
   }
+  
 
+  /* mapa */
 .map-container-5{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -70,7 +67,7 @@ main{
     }
 
 
-    /* OPACITY BOX */
+/* OPACITY BOX */
 .proyectoImg {
     position: relative;
     border-radius: 10px

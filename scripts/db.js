@@ -29,5 +29,7 @@ class Comida {
     const Solomillo = new Comida(9, "Solomillo", 17, 0, 23, 272);
 
     // pan.innerHTML = Pan._nombre;
-
-
+    
+    const Sumar = () => {
+       console.log(`total = ${id} + subtotal`) 
+    }
