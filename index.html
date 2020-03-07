@@ -10,11 +10,11 @@
 
   <title>Inicio</title>
 
-  <link rel="icon" href="https://pngimage.net/wp-content/uploads/2018/05/diet-logo-png-5.png">
+  <link rel="icon" href="./images/DietMeLogo.png">
   <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/styles.css">
-  <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="./styles/plantilla.css" rel="stylesheet">
   <script src="./scripts/scripts.js" async defer></script>
   <script src="./scripts/db.js" async defer></script>
 
@@ -22,14 +22,13 @@
 </head>
 
 <body id="page-top">
+  <a name="inicio"></a>
 
   <!-- NAV-VAR -->
-  <nav class="navbar navbar-expand-lg mb-2 bg-info text-white" id="mainNav">
+  <nav class="navbar navbar-expand-lg mb-2 text-white" style="background-color: #64a19d" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="https://pngimage.net/wp-content/uploads/2018/05/diet-logo-png-5.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Diet Me
-      </a>
+        <img src="./images/DietMeLogo.png" width="95" height="80" class="d-inline-block align-top" alt=""></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -52,10 +51,12 @@
 
   <!-- Header -->
   <header class="introFondo">
+  
+    <div></div>
     <div class="container d-flex h-100 float-md-right align-items-center">
       <div class="mx-auto text-center espacioPadding">
-        <h1 class="mx-auto my-0 text-uppercase">DietMe</h1>
-        <h2 class="mx-auto mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore, numquam magni nesciunt vitae excepturi exercitationem tempore consequuntur? Blanditiis atque quidem eum illo aliquam. Eos harum doloremque minima consectetur mollitia.</h2>
+        <img src="./images/DietMeLogo.png" width="250" height="250" class="d-inline-block align-top img-fluid" alt="">
+        <h2 class="mx-auto ml-5 text-wrap text-white bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore, numquam magni nesciunt vitae excepturi exercitationem tempore consequuntur? Blanditiis atque quidem eum illo aliquam. Eos harum doloremque minima consectetur mollitia.</h2>
         <a href="#miDieta" class="btn btn-primary js-scroll-trigger">Empezar</a>
       </div>
     </div>
@@ -73,21 +74,20 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>Mi Dieta</h4>
-            <p class="text-black-50 mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem consectetur similique nihil sit nulla dolor dolore libero fugit, doloremque placeat deleniti labore ipsam eveniet doloribus tempora eaque esse velit explicabo!</p>
+            <p class="text-black-50 mx-auto mt-2 mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem consectetur similique nihil sit nulla dolor dolore libero fugit, doloremque placeat deleniti labore ipsam eveniet doloribus tempora eaque esse velit explicabo!</p>
             <a href="miDieta.html" class="btn btn-primary js-scroll-trigger">Comenzar Dieta</a>
           </div>
-        </div>
-        
+        </div>  
       </div>
 
       <!-- IMC -->
-      <div class="row justify-content-center mb-lg-0">
+      <div class="row justify-content-center mb-lg-0 ">
         <div class="col-lg-6">
           <img class="img-fluid" src="images/brazosAbiertos.jpg" alt="">
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
+            <div class="d-flex h-100 IMC">
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">IMC</h4>
                 <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem, accusantium possimus modi dolorem molestiae eveniet, doloribus eligendi ipsa quaerat veniam, molestias ab quisquam laborum animi nihil aliquid. Voluptatum, doloremque.</p>
@@ -105,12 +105,12 @@
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
+            <div class="d-flex h-100 IMC">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">Calculadora de IMC</h4>
-                <p class="mb-0 text-white-50">Ingrese peso (kg): <input type="text" id="kg"></p>
-                <p class="mb-0 text-white-50">Ingrese Altura (m): <input type="text" id="m"></p>
-                <button class="btn btn-dark js-scroll-trigger" id="calc">Calcular</button>
+                <p class="mb-0 text-white-50">Ingrese peso (kg): <input type="number" id="kg"></p>
+                <p class="mb-0 text-white-50">Ingrese Altura (m): <input type="number" id="m"></p>
+                <button class="btn btn-dark js-scroll-trigger mt-2 mb-5" id="calc">Calcular</button>
                 <p class="mb-0 text-white-50">IMC: <span id="imc"></span></p>
                 <p class="mb-0 text-white-50">Lectura: <span id="lectura"></span></p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
@@ -122,8 +122,12 @@
     </div>
   </section>
 
-  <!-- Custom scripts for this template -->
-  <!-- <script src="js/grayscale.min.js"></script> -->
+  <!-- FOOTER -->
+  <footer class="flecha"> 
+    <a href="#inicio"><i class="fas fa-arrow-alt-circle-up"></i></a>
+  </footer>
+
+  
 
 </body>
 

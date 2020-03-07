@@ -8,7 +8,7 @@
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="./styles/plantilla.css" rel="stylesheet">
     <script src="./scripts/scripts.js" async defer></script>
     <script src="./scripts/db.js" async defer></script>
 
@@ -16,38 +16,35 @@
 </head>
 <body class="miDieta">
     <!-- NAV-VAR -->
-    <nav class="navbar navbar-expand-lg mb-2 bg-info text-white" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="https://pngimage.net/wp-content/uploads/2018/05/diet-logo-png-5.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Diet Me
-          </a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="miDieta.html">Mi Dieta</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg mb-2 text-white" style="background-color: #64a19d" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/DietMeLogo.png" width="95" height="80" class="d-inline-block align-top" alt=""></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="miDieta.html">Mi Dieta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
       <!-- MAIN -->
-
 	<main class="row mx-auto my-auto justify-content-around">
 
-        <!-- PARTE IZQUIERDA -->
+    <!-- PARTE IZQUIERDA -->
 		<div class="col-md-6">
             <h3 class="text-center mt-4">Comida al plato</h3>
             <div class="mt-4">
@@ -56,28 +53,29 @@
             </div>
         </div>
 
-        <!-- PARTE DERECHA -->
+    <!-- PARTE DERECHA -->
 		<div class="col-md-6" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
-			<h3 class="text-center mt-4"> Productos </h3>
+      <h3 class="text-center mt-4"> Productos </h3>
+      <p class="text-center">Arrastra los productos hasta el plato y sueltalos para saber sus valores nutricionales</p>
 			<div class="row mt-4">
-                <!-- Pan Blanco -->
+        <!-- Pan Blanco -->
 				<div class="col-md-4 col-sm-12 proyGridProducto proyectoImg " class="panBlanco" id="1" draggable="true" ondragstart="onDragStart(event)" ></div>
-                <!-- Platano -->
-                <div class="col-md-4  proyGridProducto proyectoImg" class="platano" id="2" draggable="true" ondragstart="onDragStart(event)"></div>
-                <!-- Arroz -->
+        <!-- Platano -->
+        <div class="col-md-4  proyGridProducto proyectoImg" class="platano" id="2" draggable="true" ondragstart="onDragStart(event)"></div>
+        <!-- Arroz -->
 				<div class="col-md-4 proyGridProducto proyectoImg" class="arroz" id="3" draggable="true" ondragstart="onDragStart(event)"></div>
-                <!-- Jamon Serrano -->
+        <!-- Jamon Serrano -->
 				<div class="col-md-4 proyGridProducto proyectoImg" class="jamonSerrano" id="4" draggable="true" ondragstart="onDragStart(event)"></div>
-                <!-- Atun -->
+        <!-- Atun -->
 				<div class="col-md-4 proyGridProducto proyectoImg" class="atun" id="5" draggable="true" ondragstart="onDragStart(event)"></div>
-                <!-- Lechuga -->
-                <div class="col-md-4 proyGridProducto proyectoImg" class="lechuga" id="6" draggable="true" ondragstart="onDragStart(event)"></div>
-                <!-- Manzana -->
-                <div class="col-md-4 proyGridProducto proyectoImg" class="manzana" id="7" draggable="true" ondragstart="onDragStart(event)"></div>
-                <!-- Queso de Cabra -->
+        <!-- Lechuga -->
+        <div class="col-md-4 proyGridProducto proyectoImg" class="lechuga" id="6" draggable="true" ondragstart="onDragStart(event)"></div>
+        <!-- Manzana -->
+        <div class="col-md-4 proyGridProducto proyectoImg" class="manzana" id="7" draggable="true" ondragstart="onDragStart(event)"></div>
+        <!-- Queso de Cabra -->
 				<div class="col-md-4 proyGridProducto proyectoImg" class="quesoCabra" id="8" draggable="true" ondragstart="onDragStart(event)"></div>
-                <!-- Solomillo -->
-                <div class="col-md-4 proyGridProducto proyectoImg" class="solomillo" id="9" draggable="true" ondragstart="onDragStart(event)"></div>
+        <!-- Solomillo -->
+        <div class="col-md-4 proyGridProducto proyectoImg" class="solomillo" id="9" draggable="true" ondragstart="onDragStart(event)"></div>
 			</div>
 		</div>
 	</main>
