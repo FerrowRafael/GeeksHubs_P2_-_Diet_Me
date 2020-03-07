@@ -19,7 +19,7 @@
   <nav class="navbar navbar-expand-lg mb-2 text-white" style="background-color: #64a19d" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="./images/DietMeLogo.png" width="95" height="80" class="d-inline-block align-top" alt=""></a>
+        <img src="./images/DietMeLogo.png" width="100" height="80" class="d-inline-block align-top" alt=""></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -48,8 +48,11 @@
 		<div class="col-md-6">
             <h3 class="text-center mt-4">Comida al plato</h3>
             <div class="mt-4">
-                <img class="circulo mx-auto" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)"src="https://purepng.com/public/uploads/large/purepng.com-plateplatedishplattertrencherflat-dishflat-vesseldishwaretableware-17015282763787nfdy.png" alt="">
-                <!-- <div class="rectangulo mx-auto"></div> -->
+              <!-- <div class="col-md-4">
+                  <img class="plato rounded d-block mx-auto" src="https://purepng.com/public/uploads/large/purepng.com-plateplatedishplattertrencherflat-dishflat-vesseldishwaretableware-17015282763787nfdy.png" alt="Fjords" draggable="true" ondragstart="onDragStart(event)">
+              </div> -->
+                <div class="dropPlato mx-auto" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)"></div>
+                <div class="rectangulo mx-auto"></div>
             </div>
         </div>
 
@@ -57,27 +60,37 @@
 		<div class="col-md-6" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
       <h3 class="text-center mt-4"> Productos </h3>
       <p class="text-center">Arrastra los productos hasta el plato y sueltalos para saber sus valores nutricionales</p>
-			<div class="row mt-4">
-        <!-- Pan Blanco -->
-				<div class="col-md-4 col-sm-12 proyGridProducto proyectoImg " class="panBlanco" id="1" draggable="true" ondragstart="onDragStart(event)" ></div>
-        <!-- Platano -->
-        <div class="col-md-4  proyGridProducto proyectoImg" class="platano" id="2" draggable="true" ondragstart="onDragStart(event)"></div>
-        <!-- Arroz -->
-				<div class="col-md-4 proyGridProducto proyectoImg" class="arroz" id="3" draggable="true" ondragstart="onDragStart(event)"></div>
-        <!-- Jamon Serrano -->
-				<div class="col-md-4 proyGridProducto proyectoImg" class="jamonSerrano" id="4" draggable="true" ondragstart="onDragStart(event)"></div>
-        <!-- Atun -->
-				<div class="col-md-4 proyGridProducto proyectoImg" class="atun" id="5" draggable="true" ondragstart="onDragStart(event)"></div>
-        <!-- Lechuga -->
-        <div class="col-md-4 proyGridProducto proyectoImg" class="lechuga" id="6" draggable="true" ondragstart="onDragStart(event)"></div>
-        <!-- Manzana -->
-        <div class="col-md-4 proyGridProducto proyectoImg" class="manzana" id="7" draggable="true" ondragstart="onDragStart(event)"></div>
-        <!-- Queso de Cabra -->
-				<div class="col-md-4 proyGridProducto proyectoImg" class="quesoCabra" id="8" draggable="true" ondragstart="onDragStart(event)"></div>
-        <!-- Solomillo -->
-        <div class="col-md-4 proyGridProducto proyectoImg" class="solomillo" id="9" draggable="true" ondragstart="onDragStart(event)"></div>
-			</div>
-		</div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./images/panBlanco.png" id="1" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+        <div class="col-md-4">
+          <img src="./images/platano.png" id="2" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+        <div class="col-md-4">
+          <img src="./images/arroz.png" id="3" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+        <div class="col-md-4">
+          <img src="./images/jamon.png" id="4" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+        <div class="col-md-4">
+          <img src="./images/atun.png" id="5" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+        <div class="col-md-4">            
+          <img src="./images/lechuga.png" id="6" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+        <div class="col-md-4">
+          <img src="./images/manzana.png" id="7" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+        <div class="col-md-4">
+          <img src="./images/queso.png" id="8" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+        <div class="col-md-4">
+          <img src="./images/solomillo.png" id="9" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+        </div>
+      </div>
+    </div>
+
 	</main>
 </body>
 </html>

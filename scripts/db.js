@@ -30,6 +30,136 @@ class Comida {
 
     // pan.innerHTML = Pan._nombre;
     
+    let subtotal = ""
+    let total = Pan.proteinas
+    console.log(`Proteinas: ${total}`)
+
+
+    let pan = document.getElementById('1');
+    // var obj_hijo = obj[Object.keys(obj)];
+
+
+
+
+
+
+
+
     const Sumar = () => {
        console.log(`total = ${id} + subtotal`) 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // DOM PRODUCTOS
+
+// document.getElementById('1').innerHTML=`
+// <div class="row image" >
+//     <ul class="column middle">
+//         <h3>Pan Blanco</h3>
+//         <li>Proteinas: 100g</li>
+//         <li>Hidratos: 100g</li>
+//         <li>Grasas: 100g</li>
+//         <li>Calorias: 100g</li>
+//     </ul>
+// </div>`
+
+// document.getElementById('2').innerHTML=`
+// <div class="row image" >
+//     <ul class="column middle">
+//         <h3>Platano</h3>
+//         <li>Proteinas: 100g</li>
+//         <li>Hidratos: 100g</li>
+//         <li>Grasas: 100g</li>
+//         <li>Calorias: 100g</li>
+//     </ul>
+// </div>`
+
+// document.getElementById('3').innerHTML=`       
+// <div class="row image" >
+//     <ul class="column middle">
+//         <h3>Arroz</h3>
+//         <li>Proteinas: 100g</li>
+//         <li>Hidratos: 100g</li>
+//         <li>Grasas: 100g</li>
+//         <li>Calorias: 100g</li>
+//     </ul>
+// </div>`
+
+// document.getElementById('4').innerHTML=`
+//     <div class="row image">
+//       <ul class="column middle">
+//       <h3>Jamón Serrano</h3>
+//         <li>Proteinas: 100g</li>
+//         <li>Hidratos: 100g</li>
+//         <li>Grasas: 100g</li>
+//         <li>Calorias: 100g</li>
+//       </ul>
+//     </div>`
+
+// document.getElementById('5').innerHTML=`
+// <div class="row image">
+// <ul class="column middle">
+// <h3>Atun</h3>
+//   <li>Proteinas: 100g</li>
+//   <li>Hidratos: 100g</li>
+//   <li>Grasas: 100g</li>
+//   <li>Calorias: 100g</li>
+// </ul>
+// </div>`
+
+// document.getElementById('6').innerHTML=`
+//     <div class="row image" >
+//         <ul class="column middle">
+//             <h3>Lechuga</h3>
+//             <li>Proteinas: 100g</li>
+//             <li>Hidratos: 100g</li>
+//             <li>Grasas: 100g</li>
+//             <li>Calorias: 100g</li>
+//         </ul>
+//     </div>`
+
+// document.getElementById('7').innerHTML=`
+//     <div class="row image" >
+//         <ul class="column middle">
+//             <h3>Manzana</h3>
+//             <li>Proteinas: 100g</li>
+//             <li>Hidratos: 100g</li>
+//             <li>Grasas: 100g</li>
+//             <li>Calorias: 100g</li>
+//         </ul>
+//     </div>`
+
+// document.getElementById('8').innerHTML=`
+
+//     <div class="row image" >
+//         <ul class="column middle">
+//             <h3>Queso de Cabra</h3>
+//             <li>Proteinas: 100g</li>
+//             <li>Hidratos: 100g</li>
+//             <li>Grasas: 100g</li>
+//             <li>Calorias: 100g</li>
+//         </ul>
+//     </div>`
+
+// document.getElementById('9').innerHTML=`
+
+//     <div class="row image">
+//         <ul class="column middle">
+//             <h3>Solomillo</h3>
+//             <li>Proteinas: 100g</li>
+//             <li>Hidratos: 100g</li>
+//             <li>Grasas: 100g</li>
+//             <li>Calorias: 100g</li>
+//         </ul>
+//     </div>`
