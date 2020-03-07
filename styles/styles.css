@@ -13,9 +13,21 @@ main{
 .page-footer{
   padding: 0px;
 } 
+
+.colorWeb {
+  background-color: #64a19d;
+}
 /* INICIO */
-.inicio{
-    background-image: url(https://www.elsetge.cat/myimg/f/10-103334_healthy-food-tumblr-wallpaper-2018-clean-15-dirty.jpg);
+
+.introFondo{
+  background-image: url(https://img.huffingtonpost.com/asset/58b7e08d1a00003400f41275.jpeg?cache=J7IxmNvgTj&ops=1778_1000);
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100vw;
+}
+
+.indexSection{
+  padding-top: 5rem;
 }
 
 /* MI DIETA */
@@ -27,17 +39,17 @@ main{
 
 .circulo{
   display: block;
-  width: 25rem;
-  height: 25rem;
-  border-radius: 100%;
-  background-color: tomato;
+  width: 30rem;
+  height: 30rem;
+  z-index: -1;
 }
 
 .rectangulo{
   display: block;
   width: 30rem;
   height: 15rem;
-
+  background-color: brown;
+  margin-top: 20px;
 }
 /* fin mi dieta */
 
@@ -47,11 +59,9 @@ main{
     background-image: url(https://wallpaperaccess.com/full/1737971.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
   }
   
-
-  /* mapa */
+  /* MAPA */
 .map-container-5{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -66,6 +76,94 @@ main{
     position:absolute;
     }
 
+
+/* SOCIAL MEDIA LOGOS */
+.icon {
+  height: 50px;
+  width: 50px;
+  border: 3px solid white;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 65px;
+  margin-right: 10px;
+  z-index: 10;
+  -moz-box-shadow: 4px 0px 20px rgba(68, 68, 68, 0.4);
+  -webkit-box-shadow: 4px 0px 20px rgba(68, 68, 68, 0.4);
+  box-shadow: 4px 0px 20px rgba(68, 68, 68, 0.4);
+  cursor:pointer;
+}
+
+.facebook .background_circle {
+  display: none;
+  width: 52px;
+  height: 54px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 1;
+  z-index: -1;
+  background-color: #3B5998;
+}
+
+.twitter .background_circle {
+  display: none;
+  width: 52px;
+  height: 54px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 1;
+  z-index: -1;
+  background-color: #55acee;
+}
+
+.instagram .background_circle {
+  display: none;
+  width: 52px;
+  height: 54px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 1;
+  z-index: -1;
+  background-color: #cd486b;
+}
+
+.pinterest .background_circle {
+  display: none;
+  width: 52px;
+  height: 54px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 1;
+  z-index: -1;
+  background-color: #cb2027;
+}
+
+.facebook:hover,
+.facebook:active {
+  background-color: #3B5998;
+}
+
+.twitter:hover,
+.twitter:active {
+  background-color: #55acee;
+}
+
+.instagram:hover,
+.instagram:active {
+  background-color: #cd486b;
+}
+
+.pinterest:hover,
+.pinterest:active {
+  background-color: #cb2027;
+}
+/* fin social media logos */
 
 /* OPACITY BOX */
 .proyectoImg {
@@ -99,7 +197,7 @@ main{
   }
   
   .proyectoImg:hover .middle {
-    opacity: 1;
+    opacity: 0.5;
   }
   
   /* input[type=text], select, textarea {
