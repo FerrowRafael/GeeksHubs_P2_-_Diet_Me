@@ -65,7 +65,9 @@ main{
   width: 20rem;
   height: 10rem;
   margin-top: 20px;
-  border: 2px solid white
+  color: white;
+  border: 2px solid white;
+  background-color:#64a19d98;
 }
 
 
@@ -109,35 +111,35 @@ h2{
 
 
 /* SOCIAL MEDIA ICONS */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
+
 
 .fa:hover {
     opacity: 0.7;
 }
 
 .svg-inline--fa.fa-w-10{
-  width: 4em;
-  height: 4em;
+  width: 2rem;
+  height: 2rem;
   border-radius: 100%;
 }
 
 .svg-inline--fa.fa-w-16{
-  width: 4em;
-  height: 4em;
+  width: 2rem;
+  height: 2rem;
   border-radius: 100%;
 }
 
 .svg-inline--fa.fa-w-14{
-  width: 4em;
-  height: 4em;
+  width: 2rem;
+  height: 2rem;
   border-radius: 100%;
 }
 /* fin social media icons */
+
+.bs-example{
+  margin: 20px;
+}
+
+.miVerde{
+  background-color: #64a19d;
+}

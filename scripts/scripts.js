@@ -124,6 +124,7 @@ function guardarDatos(){
     alert("Tu mensaje ha sido enviado correctamente");
     
    }
+   
 
 
     // CALCULADORA IMC

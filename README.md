@@ -1,4 +1,4 @@
-# Diet Me - Organiza tu dieta
+# Diet Me - Organiza tu dieta 🍽
 
 <a href="https://ferrowrafael.github.io/Proyecto2-conBootstrap/"><img src="./images/DietMeLogo.png" title="DietMeLogo" alt="DietMeLogo"></a>
 
@@ -7,7 +7,7 @@ Página web dedicada a la dietetica, donde puedes conocer los valores nutriciona
 
 ## Getting Started 🚀 
 
-[Prueba la Demo](https://ferrowrafael.github.io/Proyecto2-conBootstrap/) 
+[Prueba la Demo](https://ferrowrafael.github.io/GeeksHubs_P2_-_Diet_Me/) 
 
 O puedes clonarte el repositorio utilizando git clone (direccion del repositorio)
 
