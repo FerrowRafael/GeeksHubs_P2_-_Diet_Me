@@ -7,7 +7,7 @@ Página web dedicada a la dietetica, donde puedes conocer los valores nutriciona
 
 ## Getting Started 🚀 
 
-[Prueba la Demo](https://ferrowrafael.github.io/Proyecto2-conBootstrap/) 
+[Prueba la Demo](https://ferrowrafael.github.io/Proyecto2-Diet_Me) 
 
 O puedes clonarte el repositorio utilizando git clone (direccion del repositorio)
 
