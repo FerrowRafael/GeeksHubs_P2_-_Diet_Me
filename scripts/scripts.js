@@ -1,12 +1,12 @@
 // BASE DE DATOS
 class Comida {
   constructor(id, nombre, proteinas, hidratos, grasas, calorias){
-      this._id = id;
-      this._nombre = nombre;
-      this._proteinas = proteinas;
-      this._hidratos = hidratos;
-      this._grasas = grasas;
-      this._calorias = calorias
+      this.id = id;
+      this.nombre = nombre;
+      this.proteinas = proteinas;
+      this.hidratos = hidratos;
+      this.grasas = grasas;
+      this.calorias = calorias
   }
 
   // get cogerNombre(){
@@ -27,23 +27,32 @@ class Comida {
   const Queso = new Comida(8, "Queso de Cabra", 17, 2, 18, 250);
   const Solomillo = new Comida(9, "Solomillo", 17, 0, 23, 272);
 
-
+  let todosProductos = {
+    "1" : Pan,
+    "2" : Platano,
+    "3" : Arroz,
+    "4" : Jamon,
+    "5" : Atun,
+    "6" : Lechuga,
+    "7" : Manzana,
+    "8" : Queso,
+    "9" : Solomillo
+}
 /////*  *////// 
 //  PRUEBAS
 /////*  *//////
 
-console.log(Pan)
-console.log(Pan._calorias)
-console.log(Pan._proteinas)
-console.log(Pan._hidratos)
-console.log(Pan._grasas)
-
+// console.log(Pan)
+// console.log(Pan._calorias)
+// console.log(Pan._proteinas)
+// console.log(Pan._hidratos)
+// console.log(Pan._grasas)
 
 
 
 
 /* DRAG & DROP */
-let pan = document.getElementById('1');
+// let pan = document.getElementById('1');
 
 // let obj_hijo = obj[Object.keys(obj)];
 
@@ -54,6 +63,9 @@ function onDragStart(ev){
     ev.dataTransfer.setData("text", ev.target.id);
     let Target = ev.target.id
     console.log("OnDragStart element: ", Target)
+    nombre.innerHTML = "";
+    // let prueba = this.push(todosProductos[idProducto]);
+    // console.log(prueba)
   }
   
 
@@ -64,29 +76,37 @@ function onDrop(ev){
     let data = event.dataTransfer.getData("text");
     event.target.appendChild(document.getElementById(data));
     console.log("OnDrop")
-    nombre.innerHTML = data;
-    let DatosMil =JSON.stringify(data)
-    console.log(`JSON o no JSON${DatosMil}`)
-    console.log(data)
+    let objeto = (todosProductos[data])
+    // console.log(objeto)
+    // let nombrecillo = objeto.nombre
+    // console.log(nombrecillo)
+    // let DatosMil =JSON.stringify(data)
+    // console.log(`JSON o no JSON${DatosMil}`)
+    // console.log(data)
 
-      // if(pan){
-      //   console.log(Pan)
-      //   console.log(typeof(pan));
+    nombre.innerHTML = objeto.nombre;
+    calorias.innerHTML = objeto.calorias;
+    proteinas.innerHTML = objeto.proteinas;
+    hidratos.innerHTML = objeto.hidratos;
+    grasas.innerHTML = objeto.grasas;
+    // objeto.calorias.innerHTML = `${this.calorias}`;
+    // objeto.proteinas.innerHTML = `${this.proteinas}`;
+    // objeto.hidratos.innerHTML = `${this.hidratos}`;
+    // objeto.grasas.innerHTML = `${this.grasas}`;
+
+
+    
       // pan.innerHTML = Object.entries(Pan);
-      // pan.className= 'rectangulo';
       // console.log(Object.entries(Target))
-      // } else{
-      //   console.log("hola?")
-      // }
     // let o = JSON.parse(data); Intentando convertir string a objeto(no funciona)
-    console.log(`data es igual a ${data}`)
-    console.log(typeof(data));
-    console.log(data.proteinas)
+    // console.log(`data es igual a ${data}`)
+    // console.log(typeof(data));
+    // console.log(data.proteinas)
 
     /* Tratando de sacar todos los valores d cada producto */
-    for (const prop in data) {
-      console.log(`${data[prop]}`);
-    }
+    // for (const prop in data) {
+    //   console.log(`${data[id]}`);
+    // }
     // console.log(Object.values(o))
   }
   
