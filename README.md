@@ -1,6 +1,6 @@
 # Diet Me - Organiza tu dieta
 
-<a href="https://ferrowrafael.github.io/Proyecto2-conBootstrap/"><img src="./images/DietMeLogo2.png" title="DietMeLogo" alt="DietMeLogo"></a>
+<a href="https://ferrowrafael.github.io/Proyecto2-Diet_Me/"><img src="./images/DietMeLogo2.png" title="DietMeLogo" alt="DietMeLogo"></a>
 
 Página web dedicada a la dietetica, donde puedes conocer los valores nutricionales de los alimentos y juntarlos para prepararte un menu diario.
 
