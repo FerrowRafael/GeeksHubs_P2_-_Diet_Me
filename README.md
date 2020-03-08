@@ -1,6 +1,6 @@
 # Diet Me - Organiza tu dieta
 
-<a href="https://ferrowrafael.github.io/Proyecto2-conBootstrap/"><img src="./images/DietMeLogo.png" title="DietMeLogo" alt="DietMeLogo"></a>
+<a href="https://ferrowrafael.github.io/Proyecto2-conBootstrap/"><img src="./images/DietMeLogo2.png" title="DietMeLogo" alt="DietMeLogo"></a>
 
 Página web dedicada a la dietetica, donde puedes conocer los valores nutricionales de los alimentos y juntarlos para prepararte un menu diario.
 
@@ -35,18 +35,18 @@ O puedes clonarte el repositorio utilizando git clone (direccion del repositorio
 
 ## Preview
 
-# Página de Inicio
+### Página de Inicio
 
 <img src="./images/DietMe-Index1.jpg" title="PaginaInicio1" alt="PaginaInicio1"></a>
 
 <img src="./images/DietMe-Index2.jpg" title="PaginaInicio2" alt="PaginaInicio2"></a>
 
-# Pagina Principal
+### Pagina Principal
 
 <img src="./images/DietMe-Dieta.jpg" title="PaginaPrincipal" alt="PaginaPrincipal"></a>
 
 
-# Página de Contacto
+### Página de Contacto
 
 <img src="./images/DietMe-Contacto.jpg" title="PaginaContacto" alt="PaginaContacto"></a>
 
