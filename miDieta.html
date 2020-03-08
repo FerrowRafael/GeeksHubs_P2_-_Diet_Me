@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Dieta</title>
-    <link rel="icon" href="https://pngimage.net/wp-content/uploads/2018/05/diet-logo-png-5.png">
+    <link rel="icon" href="./images/DietMeLogo.png">
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -15,7 +15,7 @@
 
 </head>
 <body class="miDieta">
-    <!-- NAV-VAR -->
+  <!-- NAV-VAR -->
   <nav class="navbar navbar-expand-lg mb-2 text-white" style="background-color: #64a19d" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -41,20 +41,20 @@
   </nav>
 
 
-      <!-- MAIN -->
+  <!-- MAIN -->
 	<main class="row mx-auto my-auto justify-content-around">
 
     <!-- PARTE IZQUIERDA -->
 		<div class="col-md-6">
-            <h3 class="text-center mt-4">Comida al plato</h3>
-            <div class="mt-4">
-              <!-- <div class="col-md-4">
-                  <img class="plato rounded d-block mx-auto" src="https://purepng.com/public/uploads/large/purepng.com-plateplatedishplattertrencherflat-dishflat-vesseldishwaretableware-17015282763787nfdy.png" alt="Fjords" draggable="true" ondragstart="onDragStart(event)">
-              </div> -->
-                <div class="dropPlato mx-auto" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)"></div>
-                <div class="rectangulo mx-auto"></div>
-            </div>
-        </div>
+      <h3 class="text-center my-4">Comida al plato</h3>
+      <div class="my-4 justify-content-center align-items-center">
+      <!-- <div class="col-md-4">
+        <img class="plato rounded d-block mx-auto" src="https://purepng.com/public/uploads/large/purepng.com-plateplatedishplattertrencherflat-dishflat-vesseldishwaretableware-17015282763787nfdy.png" alt="Fjords" draggable="true" ondragstart="onDragStart(event)">
+      </div> -->
+      <div class="dropPlato mx-auto my-4" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)"></div>
+        <div class="rectangulo mx-auto IMC my-4">Nombre:<span id="nombre"></span></br></br>Calorias: <span id="calorias"> </span></br>Proteinas: <span id="proteinas"></span></div>
+      </div>
+    </div>
 
     <!-- PARTE DERECHA -->
 		<div class="col-md-6" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
@@ -62,31 +62,31 @@
       <p class="text-center">Arrastra los productos hasta el plato y sueltalos para saber sus valores nutricionales</p>
       <div class="row">
         <div class="col-md-4">
-          <img src="./images/panBlanco.png" id="1" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/panBlanco.png" id="Pan" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
         <div class="col-md-4">
-          <img src="./images/platano.png" id="2" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/platano.png" id="Platano" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
         <div class="col-md-4">
-          <img src="./images/arroz.png" id="3" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/arroz.png" id="Arroz" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
         <div class="col-md-4">
-          <img src="./images/jamon.png" id="4" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/jamon.png" id="Jamon" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
         <div class="col-md-4">
-          <img src="./images/atun.png" id="5" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/atun.png" id="Atun" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
         <div class="col-md-4">            
-          <img src="./images/lechuga.png" id="6" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/lechuga.png" id="Lechuga" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
         <div class="col-md-4">
-          <img src="./images/manzana.png" id="7" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/manzana.png" id="Manzana" alt="Lights" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
         <div class="col-md-4">
-          <img src="./images/queso.png" id="8" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/queso.png" id="Queso" alt="Nature" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
         <div class="col-md-4">
-          <img src="./images/solomillo.png" id="9" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          <img src="./images/solomillo.png" id="Solomillo" alt="Fjords" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
         </div>
       </div>
     </div>

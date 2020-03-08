@@ -29,10 +29,9 @@
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="./images/DietMeLogo.png" width="100" height="80" class="d-inline-block align-top" alt=""></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -52,11 +51,10 @@
   <!-- Header -->
   <header class="introFondo">
   
-    <div></div>
     <div class="container d-flex h-100 float-md-right align-items-center">
       <div class="mx-auto text-center espacioPadding">
-        <img src="./images/DietMeLogo.png" width="250" height="250" class="d-inline-block align-top img-fluid" alt="">
-        <h2 class="mx-auto ml-5 text-wrap text-white bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore, numquam magni nesciunt vitae excepturi exercitationem tempore consequuntur? Blanditiis atque quidem eum illo aliquam. Eos harum doloremque minima consectetur mollitia.</h2>
+        <img src="./images/DietMeLogo.png" width="300" height="300" class="d-inline-block align-top img-fluid" alt="">
+        <h2 class="mx-auto ml-5 text-wrap text-white bg-dark"><blockquote>“Comer es una necesidad, pero comer de forma inteligente es un arte”</blockquote></h2>
         <a href="#miDieta" class="btn btn-primary js-scroll-trigger">Empezar</a>
       </div>
     </div>
@@ -99,18 +97,20 @@
       </div>
 
       <!-- Calculadora IMC -->
-      <div class="row justify-content-center mb-4 mb-lg-0">
+      <div class="row justify-content-center mb-lg-0">
         <div class="col-lg-6">
           <img class="img-fluid" src="https://img5.goodfon.com/wallpaper/nbig/8/f2/bananas-cerials-healthy-food-fitness-healthy-life.jpg" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100 IMC">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
+              <div class="project-text w-100 my-auto text-center text-lg-center">
                 <h4 class="text-white">Calculadora de IMC</h4>
-                <p class="mb-0 text-white-50">Ingrese peso (kg): <input type="number" id="kg"></p>
-                <p class="mb-0 text-white-50">Ingrese Altura (m): <input type="number" id="m"></p>
-                <button class="btn btn-dark js-scroll-trigger mt-2 mb-5" id="calc">Calcular</button>
+                <p class="mb-0 text-white-50">Ingrese peso (kg):</p> 
+                <input type="number" class="col-7" id="kg">
+                <p class="mb-0 text-white-50">Ingrese Altura (cm):</p> 
+                <input type="number" class="col-7" id="m">
+                <button class="btn btn-dark js-scroll-trigger mt-3 mb-3 col-7" id="calc">Calcular</button>
                 <p class="mb-0 text-white-50">IMC: <span id="imc"></span></p>
                 <p class="mb-0 text-white-50">Lectura: <span id="lectura"></span></p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
