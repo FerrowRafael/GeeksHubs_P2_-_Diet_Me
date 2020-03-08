@@ -32,7 +32,11 @@ class Comida {
 //  PRUEBAS
 /////*  *//////
 
+console.log(Pan)
+console.log(Pan._calorias)
 console.log(Pan._proteinas)
+console.log(Pan._hidratos)
+console.log(Pan._grasas)
 
 
 
@@ -60,6 +64,11 @@ function onDrop(ev){
     let data = event.dataTransfer.getData("text");
     event.target.appendChild(document.getElementById(data));
     console.log("OnDrop")
+    nombre.innerHTML = data;
+    let DatosMil =JSON.stringify(data)
+    console.log(`JSON o no JSON${DatosMil}`)
+    console.log(data)
+
       // if(pan){
       //   console.log(Pan)
       //   console.log(typeof(pan));
@@ -90,55 +99,60 @@ function onDrop(ev){
     console.log("OnDragLeave")
   } 
 
-
   function handleDragStart(event) {
     this.style.opacity = '0.4'
   }
 /* fin Drag & Drop*/
 
 
-// NAV-BAR
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-  
 /* LOCAL STORAGE */
 // localStorage.setItem('Datos', JSON.stringify(baseDatos));
 // let resultado = JSON.parse(localStorage.getItem('Datos'));
 
 /* FORMULARIO LOCALSTORAGE */
-function guardarDatos(){
-    localStorage.setItem("nombre", document.getElementById("nombre").value);
-    localStorage.setItem("apellidos", document.getElementById("apellidos").value);
-    localStorage.setItem("email", document.getElementById("email").value);
-    localStorage.setItem("telefono", document.getElementById("telefono").value);
-    localStorage.setItem("asunto", document.getElementById("asunto").value);
-    localStorage.setItem("mensaje", document.getElementById("mensaje").value);
+const Nombre = document.getElementById("nombre").value;
+const Apellidos = document.getElementById("apellidos").value;
+const Email = document.getElementById("email").value;
+const Telefono = document.getElementById("telefono").value;
+const Asunto = document.getElementById("asunto").value;
+const Mensaje = document.getElementById("mensaje").value;
 
+
+function guardarDatos(){
+  event.preventDefault()
+  const Formulario = {
+      nombre: nombre.value,
+      apellidos: apellidos.value,
+      email: email.value,
+      telefono: telefono.value,
+      asunto: asunto.value,
+      mensaje: mensaje.value,
+  }
+ 
+    localStorage.setItem('Formulario', JSON.stringify(Formulario))
     alert("Tu mensaje ha sido enviado correctamente");
     
-   }
+}
    
 
 
     // CALCULADORA IMC
     calc = document.getElementById("calc");
     kg = document.getElementById("kg");
-    m = document.getElementById("m");
+    cm = document.getElementById("cm");
     imc = document.getElementById("imc");
     lectura = document.getElementById("lectura");
   
     calc.onclick = function(){
-        if(kg.value!="" && m.value!=""){
-          imcx = (kg.value / (m.value* m.value) *10000);
+
+      if(kg.value == ""){
+        alert("Debes ingresar un peso")
+      } else if (cm.value == ""){
+        alert("Debes ingresar una altura")
+      }
+        if(kg.value!="" && cm.value!=""){
+          imcx = (kg.value / (cm.value * cm.value) * 10000);
           imc.innerHTML = imcx.toFixed(2);
-            
   
         if(imcx<18.5){ 
         lectura.innerHTML = "Peso insuficiente"; 
@@ -158,8 +172,6 @@ function guardarDatos(){
         lectura.innerHTML = "Obesidad de tipo IV (extrema)"; 
         }
   
-        }else {
-          alert("Debes ingresar peso y altura.")
         }
     };
   
