@@ -5,13 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.h1 .h2 .h3 .h4{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: large;
-}
-/* body{
-} */
-main{
+section{
   width: 100%;
 }
 
@@ -21,8 +15,32 @@ main{
 
 .flecha{
   text-align: center;
-
 }
+
+h2{
+  max-width: 40rem;
+}
+
+small{
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+.miVerde{
+  background-color: #64a19d;
+}
+
+.sombraAqui {
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.IMC{
+  padding: 30px
+}
+
+
 /* INICIO */
 
 .introFondo{
@@ -36,11 +54,9 @@ main{
   padding-top: 5rem;
 }
 
-.IMC{
-  padding: 30px
-}
 
 /* MI DIETA */
+
 .miDieta{
     background-image: url(https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80);
     background-repeat: no-repeat;
@@ -57,19 +73,18 @@ main{
   border-radius: 100%;
   width: 20rem;
   height: 20rem;
-  background-color:rgb(95, 95, 95);
+  background-color:#64a19d;
 
 }
 
 .rectangulo{
   width: 20rem;
-  height: 15rem;
+  height: 11rem;
   margin-top: 20px;
   color: white;
   border: 2px solid white;
-  background-color:#64a19d98;
+  background-color: rgba(95, 95, 95, 0.575);
 }
-
 
 /* fin mi dieta */
 
@@ -81,37 +96,10 @@ main{
     background-attachment: fixed;
   }
   
-  /* MAPA */
-.map-container-5{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    }
-    .map-container-5 iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
-
-
 /* Fin Contacto */
-
-h2{
-  max-width: 40rem;
-}
-
-@media (min-width: 768px){
-  .contacto{
-    flex-direction: column;
-  }
-}
 
 
 /* SOCIAL MEDIA ICONS */
-
 
 .fa:hover {
     opacity: 0.7;
@@ -136,10 +124,3 @@ h2{
 }
 /* fin social media icons */
 
-.bs-example{
-  margin: 20px;
-}
-
-.miVerde{
-  background-color: #64a19d;
-}

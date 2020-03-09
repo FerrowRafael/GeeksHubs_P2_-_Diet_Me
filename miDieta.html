@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Dieta</title>
+    <!-- favicon -->
     <link rel="icon" href="./images/DietMeLogo2.png">
+    <!-- font awesome -->
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
     <!-- styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -12,93 +14,93 @@
     <link rel="stylesheet" href="./styles/plantilla.css">
     <!-- scripts -->
     <script src="./scripts/scripts.js" async defer></script>
-    <script src="./scripts/db.js" async defer></script>
     <!-- bootstrap scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
-<body class="miDieta">
-  <!-- NAV-VAR -->
-  <nav class="navbar navbar-expand-lg navbar-light miVerde justify-content-around">
-    <a class="navbar-brand" href="index.html">
-      <img src="./images/DietMeLogo.png" width="100" height="80" class="d-inline-block align-top" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="miDieta.html">Mi Dieta</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" async defer integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" async defer integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" async defer integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!-- MAIN -->
-	<main class="row mx-auto my-auto justify-content-around">
+  </head>
+  <body class="miDieta">
 
-    <!-- PARTE IZQUIERDA -->
-		<div class="col-md-6">
-      <h3 class="text-center my-4 font-weight-bold">Comida al plato</h3>
-      <div class="my-4 justify-content-center align-items-center">
-      <!-- <div class="col-md-4">
-        <img class="plato rounded d-block mx-auto" src="https://purepng.com/public/uploads/large/purepng.com-plateplatedishplattertrencherflat-dishflat-vesseldishwaretableware-17015282763787nfdy.png" alt="Fjords" draggable="true" ondragstart="onDragStart(event)">
-      </div> -->
-      <div class="dropPlato mx-auto my-4" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)"></div>
-        <div class="rectangulo mx-auto IMC my-5">
-          Nombre: <span id="nombre"></span></br></br>
-          Calorias: <span id="calorias"></span></br>
-          Proteinas: <span id="proteinas"></span></br>
-          Hidratos: <span id="hidratos"></span></br>
-          Grasas: <span id="grasas"></span>
+    <!-- NAV-VAR -->
+    <nav class="navbar navbar-expand-lg navbar-light miVerde justify-content-around">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/DietMeLogo.png" width="100" height="80" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="miDieta.html">Mi Dieta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!-- SECTION -->
+    <section class="row mx-auto my-auto justify-content-around">
+
+      <!-- PARTE IZQUIERDA -->
+      <div class="col-md-6">
+        <h3 class="text-center my-4 font-weight-bold">Comida al plato</h3>
+        <div class="my-4 justify-content-center align-items-center">
+        <!-- <div class="col-md-4">
+          <img class="plato rounded d-block mx-auto" src="https://purepng.com/public/uploads/large/purepng.com-plateplatedishplattertrencherflat-dishflat-vesseldishwaretableware-17015282763787nfdy.png" alt="Fjords" draggable="true" ondragstart="onDragStart(event)">
+        </div> -->
+        <div class="dropPlato mx-auto my-4 sombraAqui" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)"></div>
+          <div class="rectangulo mx-auto IMC mt-5">
+            <small>Nombre:</small> <span id="nombre"></span></br>
+            <small>Calorias:</small> <span id="calorias"></span></br>
+            <small>Proteinas:</small> <span id="proteinas"></span></br>
+            <small>Hidratos:</small> <span id="hidratos"></span></br>
+            <small>Grasas:</small> <span id="grasas"></span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- PARTE DERECHA -->
-		<div class="col-md-6" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
-      <h3 class="text-center mt-4 font-weight-bold"> Ingredientes </h3>
-      <p class="text-center py-2 miVerde">Arrastra un ingredientes hasta el plato y sueltalo para saber sus valores nutricionales</p>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="./images/panBlanco.png" id="1" alt="Pan" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
-        </div>
-        <div class="col-md-4">
-          <img src="./images/platano.png" id="2" alt="Platano" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
-        </div>
-        <div class="col-md-4">
-          <img src="./images/arroz.png" id="3" alt="Arroz" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
-        </div>
-        <div class="col-md-4">
-          <img src="./images/jamon.png" id="4" alt="Jamon" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
-        </div>
-        <div class="col-md-4">
-          <img src="./images/atun.png" id="5" alt="Atun" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
-        </div>
-        <div class="col-md-4">            
-          <img src="./images/lechuga.png" id="6" alt="Lechuga" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
-        </div>
-        <div class="col-md-4">
-          <img src="./images/manzana.png" id="7" alt="Manzana" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
-        </div>
-        <div class="col-md-4">
-          <img src="./images/queso.png" id="8" alt="Queso" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
-        </div>
-        <div class="col-md-4">
-          <img src="./images/solomillo.png" id="9" alt="Solomillo" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+      <!-- PARTE DERECHA -->
+      <div class="col-md-6" ondrop="onDrop(event)" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)">
+        <h3 class="text-center mt-4 font-weight-bold"> Ingredientes </h3>
+        <p class="text-center py-2 miVerde">Arrastra un ingrediente hasta el plato y suéltalo para saber sus valores nutricionales</p>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./images/panBlanco.png" id="1" alt="Pan" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/platano.png" id="2" alt="Platano" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/arroz.png" id="3" alt="Arroz" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/jamon.png" id="4" alt="Jamon" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/atun.png" id="5" alt="Atun" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
+          <div class="col-md-4">            
+            <img src="./images/lechuga.png" id="6" alt="Lechuga" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/manzana.png" id="7" alt="Manzana" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/queso.png" id="8" alt="Queso" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/solomillo.png" id="9" alt="Solomillo" style="width:90%" draggable="true" ondragstart="onDragStart(event)">
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-	</main>
-</body>
+  </body>
 </html>
